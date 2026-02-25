@@ -224,7 +224,7 @@
             description: '心形臉的特色是額頭較寬、下巴尖細，呈現出優雅的倒三角形',
             features: '彎月眉、圓弧眉',
             eyebrowStyle: '縮短額寬視覺 ➕ 柔化尖下巴 <br> ▫️ 眉峰： 圓潤且位置適中。眉峰不宜過高，需用圓滑的線條來平衡下巴的尖銳感<br> ▫️ 眉型： 強調柔霧感與弧度，眉毛長度要適中（不可太短），有助於在視覺上收窄寬闊的額頭<br> <br> ❌ NG 眉型：<br> ▫️歐美眉： 銳利的眉峰會讓原本就寬的額頭看起來更寬，也會讓下巴看起來更尖銳，整張臉會顯得比例失衡',
-            tips: '對於心型臉來說，眉毛是「平衡劑」<br> 拒絕任何生硬的稜角，而是用一條完美的拋物線，去中和臉部的銳利線條<br> <br> 這種設計能把天生的「精緻感」轉化為「甜美感」，讓眼神看起來更溫柔水靈'
+            tips: '對於心型臉來說，眉毛是「平衡劑」<br> 拒絕任何生硬的稜角，而是用一條完美的拋物線，去中和臉部的銳利線條<br> <br> 這種設計能把天生的「精緻感」轉化為「甜美感」，讓眼神看起來更溫柔'
           },
           {
             img: 'sources/長型臉.jpg',
@@ -776,7 +776,7 @@
           </div>
 
           <div class="card p-8 rounded-3xl text-center mt-6" style="background: linear-gradient(135deg, ${config.secondary_action || defaultConfig.secondary_action} 0%, ${config.card_background || defaultConfig.card_background} 100%); box-shadow: 0 4px 20px rgba(157, 126, 95, 0.18);">
-            <h3 class="mb-3" style="font-size: ${baseFont * 1.4}px; font-family: ${headingFontStack}; color: ${config.primary_text || defaultConfig.primary_text}; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 10px;">
+            <h3 class="mb-3" style="font-size: ${baseFont * 1.1}px; font-family: ${headingFontStack}; color: ${config.primary_text || defaultConfig.primary_text}; font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 10px; white-space: nowrap;">
               <span style="color: ${config.primary_action || defaultConfig.primary_action};">${getIcon('home', config.primary_action || defaultConfig.primary_action, 24)}</span> 個人工作室，環境舒適安靜
             </h3>
             <p style="font-size: ${baseFont * 1.05}px; font-family: ${fontStack}; color: ${config.primary_text || defaultConfig.primary_text}; line-height: 2; opacity: 0.85;">
@@ -1177,7 +1177,7 @@
 
       app.innerHTML = `
         <!-- 頂部品牌橫幅 -->
-        <div class="top-brand-bar" style="position: fixed; top: 0; left: 0; right: 0; background: linear-gradient(135deg, ${config.card_background || defaultConfig.card_background} 0%, ${config.secondary_action || defaultConfig.secondary_action} 100%); color: ${config.primary_action || defaultConfig.primary_action}; padding: 14px 20px; text-align: center; z-index: 9999; box-shadow: 0 2px 16px rgba(157, 126, 95, 0.15); border-bottom: 2px solid ${config.primary_action || defaultConfig.primary_action};">
+        <div class="top-brand-bar" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" style="position: fixed; top: 0; left: 0; right: 0; background: linear-gradient(135deg, ${config.card_background || defaultConfig.card_background} 0%, ${config.secondary_action || defaultConfig.secondary_action} 100%); color: ${config.primary_action || defaultConfig.primary_action}; padding: 14px 20px; text-align: center; z-index: 9999; box-shadow: 0 2px 16px rgba(157, 126, 95, 0.15); border-bottom: 2px solid ${config.primary_action || defaultConfig.primary_action}; cursor: pointer; transition: opacity 0.3s ease;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
           <div style="font-size: ${baseFont * 1.15}px; font-family: ${config.heading_font_family || defaultConfig.heading_font_family}, ${fontStack}; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;">
             BeautyBrow Studio
           </div>
